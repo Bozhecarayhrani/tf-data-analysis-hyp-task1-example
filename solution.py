@@ -11,4 +11,4 @@ def solution(x_success: int,
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return proportions_ztest(np.array([x_success, y_success]), np.array([x_cnt, y_cnt]), alternative='two-sided')[1] < 0.01/2 # Ваш ответ, True или False
+    return proportions_ztest(np.array([x_success, y_success]), np.array([x_cnt, y_cnt]), alternative='larger')[1] < 0.01 # Ваш ответ, True или False
